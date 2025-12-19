@@ -16,7 +16,7 @@ This repository provides the tools to simulate $R$ for custom geometries and sol
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ### 📡 [GEANT4_NCD](./GEANT4_NCD)
 This directory contains the C++ source code for Monte Carlo simulations.
@@ -39,7 +39,7 @@ A collection of relevant scientific papers. Beginners are encouraged to review t
 
 ---
 
-## 🚀 Beginner's Guide to the Workflow
+##  Beginner's Guide to the Workflow
 
 1.  **Define Geometry**: Open the GEANT4 `NCD_General` project. Use the `NCD_Geometry.hh` flie in include to set your moderator thicknesses (e.g., 1-inch, 2-inch, or layered Borated High Density Polyethylene and High Density Polyethylene).
 2.  **Run Simulations**: Execute macros across a range of neutron energies (from $10^{-10}$ to $11$ MeV) to determine how many neutrons your specific design captures.
