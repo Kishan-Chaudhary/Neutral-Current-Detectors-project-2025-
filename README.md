@@ -43,7 +43,7 @@ A collection of relevant scientific papers. Beginners are encouraged to review t
 
 1.  **Define Geometry**: Open the GEANT4 `NCD_General` project. Use the `NCD_Geometry.hh` flie in include to set your moderator thicknesses (e.g., 1-inch, 2-inch, or layered Borated High Density Polyethylene and High Density Polyethylene).
 2.  **Run Simulations**: Execute macros across a range of neutron energies (from $10^{-10}$ to $11$ MeV) to determine how many neutrons your specific design captures.
-3.  **Process Output**: Use the Python scripts to extract data from `.root` files and rebin them into standard energy groups (Thermal, Epithermal, and Fast).
+3.  **Process Output**: The simulation will output csv files that includes the # of events for each run and the neutron captures from which the response can be calculated. Then rebin them into standard energy groups (Thermal, Epithermal, and Fast).
 
 4.  **Unfold**: Input your experimental lab counts into the Unfolding scripts to determine the flux of the environment you are measuring.
 
