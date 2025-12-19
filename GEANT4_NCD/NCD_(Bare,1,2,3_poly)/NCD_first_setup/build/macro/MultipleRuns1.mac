@@ -1,0 +1,66 @@
+# First – Multiple Runs for 0.0000000001 to 11 MeV, /gps/position 70 -62.62 0 cm
+
+#/control/verbose 2
+/run/initialize
+#/testhadr/phys/thermalScattering true
+# -------------------------------
+
+# -------------------------------
+/gps/particle neutron
+/gps/ene/mono 0.0000000001 MeV 
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 19 cm
+/gps/pos/centre 0 0 0 m
+/gps/pos/halfz 113.5 cm
+# 3. Emit in **random directions**
+/gps/ang/type cos       # isotropic emission
+/gps/ang/surfnorm true
+
+/run/beamOn 10
+# -------------------------------
+
+# -------------------------------
+#/analysis/setFileName NCD_0.000000001MeV_Neutrons_bare.root
+#/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 0.000000001 MeV
+/gps/ang/surfnorm true
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 30 cm
+/gps/pos/centre 0 0 0 m 
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+/run/beamOn 100
+#/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+#/analysis/setFileName NCD_0.00000001MeV_Neutrons_bare.root
+#/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 0.00000001 MeV
+/gps/ang/surfnorm true
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 30 cm
+/gps/pos/centre 0 0 0 m 
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 100
+#/analysis/closeFile
+

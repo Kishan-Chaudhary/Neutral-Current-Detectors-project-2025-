@@ -1,0 +1,21 @@
+# test38
+#
+/control/verbose 2
+/run/initialize
+#
+/gps/particle neutron
+# energy distribution
+/gps/ene/type Arb
+/gps/hist/file Spectrum.dat
+/gps/hist/inter Spline
+# source
+/gps/pos/type Surface
+/gps/pos/shape Sphere
+/gps/pos/radius 2.49 m
+/gps/pos/centre 0 0 0 m
+
+# angular distribution
+/gps/ang/type iso
+#/run/printProgress 10000
+#
+/run/beamOn 10
