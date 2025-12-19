@@ -4,7 +4,7 @@ This repository provides a complete toolchain for characterizing neutron environ
 
 ---
 
-## 🔬 Scientific Context
+## Scientific Context
 
 In neutron physics, detectors often cannot measure a particle's energy directly. Instead, we use a series of detectors wrapped in different thicknesses of moderator (Polyethylene). This creates a "system of equations" where we know the captured counts ($C$) and the detector's sensitivity ($R$), but we must solve for the unknown neutron energy distribution ($\Phi$).
 
@@ -24,13 +24,13 @@ This directory contains the C++ source code for Monte Carlo simulations.
 * **NCD_General**: A highly modular simulation environment. Users can edit `DetectorConstruction.cc` to simulate complex geometries, such as **layered HDPE and BHDPE moderators** with varying thicknesses.
 
 
-### 🐍 [NCD_PYTHON](./NCD_PYTHON)
+### [NCD_PYTHON](./NCD_PYTHON)
 The Python suite handles the data processing and mathematical "unfolding" (de-convolution). The scripts were repurposed from Tyler Dolezal's unfolding script(https://github.com/tylerdolezal/Neutron-Unfolding).
 * **Solvers**: Implementations of **MLEM** (Maximum Likelihood Expectation Maximization), **GRAVEL**, **LU Decomposition**, and **SVD**.
 * **Monte Carlo Analysis**: Tools to propagate experimental and systematic errors through the unfolding process to provide reliable error bars.
 * **Data Rebinning**: Scripts to convert high-resolution simulation outputs into 3x3 or nxn matrices.
 
-### 📚 [NCD_Literature](./NCD_Literature)
+### [NCD_Literature](./NCD_Literature)
 A collection of relevant scientific papers. Beginners are encouraged to review these to understand:
 * The physics of **Helium-3 capture cross-sections**.
 * The behavior of **moderators** (thermalization).
@@ -49,7 +49,7 @@ A collection of relevant scientific papers. Beginners are encouraged to review t
 
 ---
 
-## 🛠 Prerequisites
+## Prerequisites
 
 * **GEANT4** (v11.0+ recommended)
 * **Python 3.10+**
@@ -57,6 +57,6 @@ A collection of relevant scientific papers. Beginners are encouraged to review t
 
 ---
 
-## 📝 Troubleshooting & Notes
+## Troubleshooting & Notes
 * **Encoding Errors**: If running on Windows, ensure your Python scripts use `utf-8` encoding (especially when using the $\pm$ symbol in plots).
-* **Matrix Stability**: If your unfolding results show negative values, try using the **MLEM** or **GRAVEL** iterative algorithms rather than direct LU decomposition.
+* **Matrix Stability**: If your unfolding results show negative values, try using the **MLEM** or **GRAVEL** iterative algorithms rather than direct LU decomposition. The LU is mathematically reliable, however its limited for determined systems and linear independence of the repsponse matrix.
