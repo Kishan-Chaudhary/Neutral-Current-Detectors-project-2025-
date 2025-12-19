@@ -1,0 +1,28 @@
+# Bare – Multiple Runs for 6.5 to 7.5 MeV
+
+#/control/verbose 2
+/run/initialize
+/gps/particle neutron
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 19 cm
+/gps/pos/centre 0 0 0 m
+/gps/pos/halfz 113.5 cm
+# 3. Angular distribution**
+/gps/ang/type cos       # isotropic emission
+/gps/ang/surfnorm true
+
+# -------------------------------
+
+# -------------------------------
+/gps/ene/mono 6.5 MeV
+/run/beamOn 68000023
+
+/gps/ene/mono 7.0 MeV
+/run/beamOn 70000024
+
+/gps/ene/mono 7.5 MeV
+/run/beamOn 92000025
+
+
+

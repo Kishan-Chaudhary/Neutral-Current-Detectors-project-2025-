@@ -1,0 +1,27 @@
+# Bare – Multiple Runs for 0.0000000001 to 11 MeV, /gps/position 70 -62.62 0 cm
+
+/control/verbose 2
+/run/initialize
+
+
+# --- Run 1 ---
+/gps/particle neutron
+/gps/ene/mono 0.000000001 MeV 
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 19 cm
+/gps/pos/centre 0 0 0 m
+/gps/pos/halfz 113.5 cm
+/gps/ang/type cos
+/gps/ang/surfnorm true
+/run/beamOn 1000
+
+
+# --- Run 2 ---
+/gps/ene/mono 0.00000001 MeV
+/run/beamOn 10000
+
+# --- Run 3 ---
+/gps/ene/mono 0.0000001 MeV
+/run/beamOn 100000
+/analysis/closeFile

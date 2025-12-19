@@ -1,0 +1,1599 @@
+# bare – Multiple Runs for 0.0000000001 to 11 MeV, /gps/position 70 -62.62 0 cm
+#/testhadr/phys/thermalScattering true
+/run/initialize
+/control/verbose 2
+# -------------------------------
+
+# -------------------------------
+/gps/particle neutron
+/gps/ene/mono 0.0000000001 MeV 
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 19 cm
+/gps/pos/centre 0 0 0 m
+/gps/pos/halfz 113.5 cm
+# 3. Emit in **random directions**
+/gps/ang/type cos       # isotropic emission
+/gps/ang/surfnorm true
+
+/run/beamOn 10
+#/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_0.000000001MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 0.000000001 MeV
+/gps/ang/surfnorm true
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m 
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_0.00000001MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 0.00000001 MeV
+/gps/ang/surfnorm true
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m 
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_0.0000001MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 0.0000001 MeV
+/gps/ang/surfnorm true
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m 
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_0.000001MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 0.000001 MeV
+/gps/ang/surfnorm true
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m  
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_0.00001MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 0.00001 MeV
+/gps/ang/surfnorm true
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m 
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_0.0001MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 0.0001 MeV
+/gps/ang/surfnorm true
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m 
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_0.001MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 0.001 MeV
+/gps/ang/surfnorm true
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m  
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_0.01MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 0.01 MeV
+/gps/ang/surfnorm true
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m  
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_0.1MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 0.1 MeV
+/gps/ang/surfnorm true
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m 
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_0.2MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 0.2 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m 
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_0.3MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 0.3 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m  
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_0.4MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 0.4 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m  
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_0.5MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 0.5 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m 
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_0.6MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 0.6 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m  
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_0.7MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 0.7 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m  
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_0.8MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 0.8 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m  
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_0.9MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 0.9 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m  
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_1MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 1 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m  
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_1.2MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 1.2 MeV
+/gps/ang/surfnorm true
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_1.4MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 1.4 MeV
+/gps/ang/surfnorm true
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_1.6MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 1.6 MeV
+/gps/ang/surfnorm true
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_1.8MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 1.8 MeV
+/gps/ang/surfnorm true
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_2MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 2 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m  
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_2.2MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 2.2 MeV
+/gps/ang/surfnorm true
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_2.4MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 2.4 MeV
+/gps/ang/surfnorm true
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_2.6MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 2.6 MeV
+/gps/ang/surfnorm true
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_2.8MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 2.8 MeV
+/gps/ang/surfnorm true
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_3MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 3 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m 
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_3.2MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 3.2 MeV
+/gps/ang/surfnorm true
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_3.4MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 3.4 MeV
+/gps/ang/surfnorm true
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_3.6MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 3.6 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_3.8MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 3.8 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_4MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 4 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m  
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+/gps/ang/surfnorm true
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_4.2MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 4.2 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+
+/gps/ang/surfnorm true
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_4.4MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 4.4 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+/gps/ang/surfnorm true
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_4.6MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 4.6 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_4.8MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 4.8 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_5MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 5 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m  
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_5.2MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 5.2 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_5.4MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 5.4 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_5.6MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 5.6 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_5.8MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 5.8 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+/gps/ang/surfnorm true
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_6MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 6 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m 
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+
+/gps/ang/surfnorm true
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_6.2MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 6.2 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_6.4MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 6.4 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_6.6MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 6.6 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_6.8MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 6.8 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_7MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 7 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m  
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_7.2MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 7.2 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_7.4MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 7.4 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_7.6MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 7.6 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_7.8MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 7.8 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_8MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 8 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_8.2MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 8.2 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+/analysis/setFileName NCD_8.4MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 8.4 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+/analysis/setFileName NCD_8.6MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 8.6 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+/analysis/setFileName NCD_8.8MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 8.8 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_9MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 9 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+/analysis/setFileName NCD_9.2MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 9.2 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+/analysis/setFileName NCD_9.4MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 9.4 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+/analysis/setFileName NCD_9.6MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 9.6 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+/analysis/setFileName NCD_9.8MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 9.8 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_10MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 10 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m 
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+/analysis/setFileName NCD_10.2MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 10.2 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m 
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+/analysis/setFileName NCD_10.4MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 10.4 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m 
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+/analysis/setFileName NCD_10.6MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 10.6 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m 
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+/analysis/setFileName NCD_10.8MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 10.8 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m 
+
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_11MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 11 MeV
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 3 cm
+/gps/pos/centre 0 0 0 m 
+# 3. Emit in **random directions**
+/gps/ang/type cos        # isotropic emission
+/gps/ang/surfnorm true
+
+
+
+
+
+/run/beamOn 3000000
+/analysis/closeFile

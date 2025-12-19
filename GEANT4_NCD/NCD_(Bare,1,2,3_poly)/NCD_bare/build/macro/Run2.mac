@@ -1,0 +1,30 @@
+# Bare – Multiple Runs for 1.0 to 2.5 MeV
+
+#/control/verbose 2
+/run/initialize
+/gps/particle neutron
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 19 cm
+/gps/pos/centre 0 0 0 m
+/gps/pos/halfz 113.5 cm
+# 3. Angular distribution**
+/gps/ang/type cos       # isotropic emission
+/gps/ang/surfnorm true
+
+# -------------------------------
+
+# -------------------------------
+
+/gps/ene/mono 1.0 MeV
+/run/beamOn 30000012
+
+/gps/ene/mono 1.5 MeV
+/run/beamOn 32000013
+
+/gps/ene/mono 2.0 MeV
+/run/beamOn 36000014
+
+/gps/ene/mono 2.5 MeV
+/run/beamOn 37000015
+
