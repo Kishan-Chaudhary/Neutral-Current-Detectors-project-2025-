@@ -25,7 +25,7 @@ This directory contains the C++ source code for Monte Carlo simulations.
 
 
 ### 🐍 [NCD_PYTHON](./NCD_PYTHON)
-The Python suite handles the data processing and mathematical "unfolding" (de-convolution).
+The Python suite handles the data processing and mathematical "unfolding" (de-convolution). The scripts were repurposed from Tyler Dolezal's unfolding script(https://github.com/tylerdolezal/Neutron-Unfolding).
 * **Solvers**: Implementations of **MLEM** (Maximum Likelihood Expectation Maximization), **GRAVEL**, **LU Decomposition**, and **SVD**.
 * **Monte Carlo Analysis**: Tools to propagate experimental and systematic errors through the unfolding process to provide reliable error bars.
 * **Data Rebinning**: Scripts to convert high-resolution simulation outputs into 3x3 or nxn matrices.
