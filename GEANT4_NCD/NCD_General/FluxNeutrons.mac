@@ -1,0 +1,22 @@
+# test38
+#
+/control/verbose 2
+/run/initialize
+#
+/gps/particle neutron
+# energy distribution
+/gps/ene/type Arb
+/gps/hist/file Spectrum.dat
+/gps/hist/inter Spline
+# source
+/gps/particle neutron
+/gps/ene/mono 0.000000001 MeV 
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 19 cm
+/gps/pos/centre 0 0 0 m
+/gps/pos/halfz 113.5 cm
+/gps/ang/type cos
+/gps/ang/surfnorm true
+
+/run/beamOn 1000000

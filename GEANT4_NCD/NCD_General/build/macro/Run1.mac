@@ -1,0 +1,46 @@
+# 1inch – Multiple Runs for 0.0000000001 to 0.01 MeV
+
+#/control/verbose 2
+/run/initialize
+/gps/particle neutron
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 19 cm
+/gps/pos/centre 0 0 0 m
+/gps/pos/halfz 113.5 cm
+# 3. Angular distribution**
+/gps/ang/type cos       # isotropic emission
+/gps/ang/surfnorm true
+# -------------------------------
+
+# -------------------------------
+#/analysis/setFileName NCD_0.0000000001MeV_Neutrons_bare.root
+#/analysis/openFile
+
+/gps/ene/mono 0.0000000001 MeV
+/run/beamOn 750001
+ 
+/gps/ene/mono 0.000000001 MeV
+/run/beamOn 640002
+
+/gps/ene/mono 0.00000001 MeV
+/run/beamOn 480003
+
+/gps/ene/mono 0.0000001 MeV
+/run/beamOn 240004
+
+/gps/ene/mono 0.000001 MeV
+/run/beamOn 140005
+
+/gps/ene/mono 0.00001 MeV
+/run/beamOn 110006
+
+/gps/ene/mono 0.0001 MeV
+/run/beamOn 100007
+
+/gps/ene/mono 0.001 MeV
+/run/beamOn 110008
+
+/gps/ene/mono 0.01 MeV
+/run/beamOn 120009
+
