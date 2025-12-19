@@ -21,7 +21,7 @@ This repository provides the tools to simulate $R$ for custom geometries and sol
 ### 📡 [GEANT4_NCD](./GEANT4_NCD)
 This directory contains the C++ source code for Monte Carlo simulations.
 * **Response Generation**: Includes the code used to generate the results shown in the project presentations.
-* **NCD_General**: A highly modular simulation environment. Users can edit `DetectorConstruction.cc` to simulate complex geometries, such as **layered HDPE and BHDPE moderators** with varying thicknesses.
+* **NCD_General**: A highly modular simulation environment. Users can edit "NCDGeometry.hh" and "DetectorConstruction.cc" to simulate complex geometries, such as **layered HDPE and BHDPE moderators** with varying thicknesses.
 
 
 ### [NCD_PYTHON](./NCD_PYTHON)
