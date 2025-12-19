@@ -1,0 +1,67 @@
+# bare – Multiple Runs for 0.0000000001 to 11 MeV, /gps/position 70 -62.62 0 cm
+
+/control/verbose 2
+/run/initialize
+
+# -------------------------------
+
+# -------------------------------
+
+/gps/particle neutron
+/gps/ene/mono 0.0000000001 MeV 
+/gps/pos/type Surface
+/gps/pos/shape Cylinder
+/gps/pos/radius 19 cm
+/gps/pos/centre 0 0 0 m
+/gps/pos/halfz 113.5 cm
+
+# 3. Emit in **random directions**
+/gps/ang/type cos       # isotropic emission
+/gps/ang/surfnorm true
+
+/run/beamOn 30
+
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_1.4MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 1.4 MeV
+# Water boxes 70 -25 0, PolyEthylene 70 -55 0 cm 
+/gps/position 70 -62.62 0 cm 
+/gps/pos/type Point
+# 3. Emit in **random directions**
+/gps/ang/type iso        # isotropic emission
+/gps/ang/mintheta 0 deg
+/gps/ang/maxtheta 180 deg
+
+/gps/ang/minphi 0 deg
+/gps/ang/maxphi 360 deg
+
+/run/beamOn 10000
+/analysis/closeFile
+
+# -------------------------------
+
+# -------------------------------
+/analysis/setFileName NCD_1.6MeV_Neutrons_bare.root
+/analysis/openFile 
+/gps/particle neutron
+/gps/ene/mono 1.6 MeV
+# Water boxes 70 -25 0, PolyEthylene 70 -55 0 cm 
+/gps/position 70 -62.62 0 cm 
+/gps/pos/type Point
+# 3. Emit in **random directions**
+/gps/ang/type iso        # isotropic emission
+/gps/ang/mintheta 0 deg
+/gps/ang/maxtheta 180 deg
+
+/gps/ang/minphi 0 deg
+/gps/ang/maxphi 360 deg
+
+/run/beamOn 10000
+/analysis/closeFile
+
+
